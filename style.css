@@ -1,0 +1,59 @@
+/* i selettori seguono l'ordine della pagina HTML */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-line, .second-line {
+    height: 50vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.first-line div, .second-line div {
+    height: 83%;
+    width: 25%;
+    display: inline-block;
+    background-color: rgba(199,199,199,0.5);
+    margin: 10px 10px;
+    position: relative;
+    box-shadow: 10px 10px 5px #dedede;
+}
+
+h1 {
+    margin-top: 5px;
+    height: 20%;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.first-line img, .second-line img {
+    width: 80%;
+    height: 50%;
+    margin-top: 5%;
+}
+
+div.first-line  p, div.second-line p {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 100%;
+}
+
+div.first-line i, div.second-line i {
+    display:none ;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    color: red;
+}
+
+.first-line div:hover i, .second-line div:hover i {
+    display: block;
+}
+
+div.second-line div:nth-child(2) p, div.first-line div:nth-child(2) p {
+    background-color: red;
+}
