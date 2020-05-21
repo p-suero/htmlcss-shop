@@ -6,13 +6,13 @@
     box-sizing: border-box;
 }
 
-.first-line, .second-line {
+.row {
     height: 50vh;
     width: 100vw;
     text-align: center;
 }
 
-.first-line div, .second-line div {
+.row div {
     height: 83%;
     width: 25%;
     display: inline-block;
@@ -28,13 +28,13 @@ h1 {
     font-family: 'Baloo Chettan 2', cursive;
 }
 
-.first-line img, .second-line img {
+img {
     width: 80%;
     height: 50%;
     margin-top: 5%;
 }
 
-div.first-line  p, div.second-line p {
+div.row p {
     background-color: green;
     position: absolute;
     top: 0;
@@ -42,18 +42,18 @@ div.first-line  p, div.second-line p {
     font-size: 100%;
 }
 
-div.first-line i, div.second-line i {
-    display:none ;
+.row div i {
+    display: none;
     position: absolute;
     bottom: 7%;
     left: 50%;
     color: red;
 }
 
-.first-line div:hover i, .second-line div:hover i {
+.row div:hover i {
     display: block;
 }
 
-div.second-line div:nth-child(2) p, div.first-line div:nth-child(2) p {
+div:nth-child(2) p {
     background-color: red;
 }
