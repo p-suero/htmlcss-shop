@@ -6,13 +6,26 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+header {
+    height: 10vh;
+}
+
+header h1 {
+    text-align: center;
+    padding: 25px 0;
+}
+
 .row {
-    height: 50vh;
+    height: 45vh;
     width: 100vw;
     text-align: center;
 }
 
-.row div {
+.item {
     height: 83%;
     width: 25%;
     display: inline-block;
@@ -22,19 +35,18 @@
     box-shadow: 10px 10px 5px #dedede;
 }
 
-h1 {
+.item h2 {
     margin-top: 5px;
     height: 20%;
-    font-family: 'Baloo Chettan 2', cursive;
 }
 
-img {
+.item img {
     width: 80%;
     height: 50%;
     margin-top: 5%;
 }
 
-div.row p {
+.item p {
     background-color: green;
     position: absolute;
     top: 0;
@@ -42,7 +54,7 @@ div.row p {
     font-size: 100%;
 }
 
-.row div i {
+.item i {
     display: none;
     position: absolute;
     bottom: 7%;
@@ -50,10 +62,10 @@ div.row p {
     color: red;
 }
 
-.row div:hover i {
+.item:hover i {
     display: block;
 }
 
-div:nth-child(2) p {
+.item:nth-child(2) p {
     background-color: red;
 }
